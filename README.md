@@ -17,5 +17,6 @@ However, if there is not enough inventory, your order will be canceled instead.
 
 ![Image of example](https://github.com/Exxodus-sama/bamazon-cli-app/blob/master/images/img4.png)
 
+## Future of the App
 
-
+In future updates, the app will be able to support information from each department that will be useful to managers and supervisors.
