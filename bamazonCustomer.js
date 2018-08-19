@@ -14,9 +14,8 @@ var connection = mysql.createConnection({
 	database: 'Bamazon_db', 
 });
 
-// Setting up the connection as well as creating the array that holds all the products the customer purchases.
+// Setting up the connection
 // =============================================================
-// var productPurchased = [];
 connection.connect();
 
 //Connects to the mysql database and displays the items in a table using the 'cli-table' npm package!
@@ -93,7 +92,7 @@ prompt.get(['buyItemID'], function (err, result) {
         }
         // Insufficient inventory
         else{
-          console.log('Sorry... We only have ' +  bamazonQuantity + ' of those items. Order cancelled.');
+          console.log('We are very sorry... We only have ' +  bamazonQuantity + ' of those items. Order cancelled.');
           connection.end();
         }
       }
